@@ -60,7 +60,7 @@ inicio
      campo1[6,3]:= 1
      campo1[6,4]:= 1
      campo1[6,5]:= 0
-     campo1[6,6]:= 3
+     campo1[6,6]:= 0
 
     limpatela()
 //desejando boas vindas ao jogador e explicando como ele deve fazer para comecar

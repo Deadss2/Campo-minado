@@ -1,10 +1,10 @@
 algoritmo "Campo Minado"
-// Disciplina   : [Linguagem e Lógica de Programação] 
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o] 
 // Professor   : Antonio Carlos Nicolodi 
-// Função : LP - jogo campo minado
+// FunÃ§Ã£o : LP - jogo campo minado
 // Autora: Isabele e Alice
 // Data: 09/03/2023
-// Seção de Declarações
+// SeÃ§Ã£o de DeclaraÃ§Ãµes
 var
 campo1: vetor [1..6, 1..6] de inteiro
 campo2: vetor [1..6, 1..6] de caracter
@@ -13,12 +13,12 @@ c, l:  inteiro
 linha: inteiro
 coluna:inteiro
 score: inteiro
-//c colunas l linhas v condição de vitória xey resposta do jogador
+//c colunas l linhas v condiÃ§Ã£o de vitÃ³ria xey resposta do jogador
 
 inicio
 
-//0 = nenhuma bomba, 1 = uma bomba próxima, 2 = duas bombas próximas,
-//3 = três bombas próximas, 9 = bomba.
+//0 = nenhuma bomba, 1 = uma bomba prÃ³xima, 2 = duas bombas prÃ³ximas,
+//3 = trÃªs bombas prÃ³ximas, 9 = bomba.
      score := 0
      campo1[1,1]:= 0
      campo1[1,2]:= 0
@@ -52,8 +52,8 @@ inicio
      campo1[5,2]:= 1
      campo1[5,3]:= 9
      campo1[5,4]:= 2
-     campo1[5,5]:= 0
-     campo1[5,6]:= 0
+     campo1[5,5]:= 1
+     campo1[5,6]:= 1
 
      campo1[6,1]:= 0
      campo1[6,2]:= 1
@@ -66,9 +66,9 @@ inicio
 //desejando boas vindas ao jogador e explicando como ele deve fazer para comecar
 //o jogo.
     escreval ("--------------------------------------------------------")
-    escreval ("¦            SEJA BEM VINDE AO CAMPO MINADO!           ¦")
-    escreval ("¦AVISO: TODA VEZ QUE TIVER BOMBA PRÓXIMA VAMOS TE FALAR¦")
-    escreval ("¦                 !!!BOA SORTE!!!                      ¦")
+    escreval ("Â¦            SEJA BEM VINDE AO CAMPO MINADO!           Â¦")
+    escreval ("Â¦AVISO: TODA VEZ QUE TIVER BOMBA PRÃ“XIMA VAMOS TE FALARÂ¦")
+    escreval ("Â¦                 !!!BOA SORTE!!!                      Â¦")
     escreval ("--------------------------------------------------------")
     escreval (" ")
 
@@ -100,7 +100,7 @@ escreval (" ")
     
     se campo1[l, c] = 1  entao
     score :=  score + 1;
-    escreval ("1 BOMBA PRÓXIMA, TOME CUIDADO ")
+    escreval ("1 BOMBA PRÃ“XIMA, TOME CUIDADO ")
     campo2[l, c] := "-1-"
     fimse
     
@@ -111,13 +111,13 @@ escreval (" ")
     fimse
     
     se campo1[l, c] = 3  entao
-    score :=  score + 15;
+    score :=  score + 1;
     escreval ("3 bombas proximas")
     campo2[l, c] := "-3-"
     fimse
 
     se campo1[l, c] = 9  entao
-    escreval ("KABUM você explodiu >:<")
+    escreval ("KABUM vocÃª explodiu >:<")
     campo2[l, c] := "-9-"
 
  escreval ("    _.-^^--------^^-._  ")
@@ -133,7 +133,7 @@ escreval (" ")
   escreval ("_____.,-#%&$@%#&#~,._____  ")
      escreval (" ")
      escreval (" ")
-     escreval ("PONTUAÇÃO = ",score)
+     escreval ("PONTUAÃ‡ÃƒO = ",score)
      escreval ("TENTE NOVAMENTE!")
      escreval (" ")
     fimse
@@ -151,7 +151,7 @@ fimpara
 se score = 32 entao
 escreval("                 /|  /|  ---------------------------")
 escreval("                 ||__||  |                         |")
-escreval("                /   O O\__   PARABÉNS VOCÊ GANHOU  |")
+escreval("                /   O O\__   PARABÃ‰NS VOCÃŠ GANHOU  |")
 ESCREVAL("               /          \     REI DAS BOMBAS     |")
 escreval("              /      \     \                       |")
 escreval("             /   _    \     \ ----------------------")

@@ -6,3 +6,5 @@ Ao abrir o jogo vai ter uma área onde você clica aparece um mapa revelando alg
 A quantidade de número que aparecer no quadrado, simbolisa a quantidade de bombas adjacentes;
 <br>
 A bandeira marca onde você supÔe que têm uma bomba. Adiciona a bandeira clicando no botão direito do mouse. 
+<br>
+PS: apenas um adendo ao projeto o codigo em C# foi feito inteiramente por bloco de notas pois meu pc não aguentava o programa.
